@@ -64,7 +64,8 @@ function update()
 					secondsTillReward = rewardHourInSeconds - localTimeInSeconds;
 				}
 				else {
-					secondsTillReward = dayInSeconds - (dayInSeconds - localTimeInSeconds);
+					console.log(currentMember.item(2).innerHTML);
+					secondsTillReward = (dayInSeconds - localTimeInSeconds) + rewardHourInSeconds;
 				}
 				
 				var hourCount = Math.floor((secondsTillReward / 60) / 60);
