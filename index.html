@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+<style>
+font {
+  size:-webkit-text-size-adjust: none;
+}
+body {
+    background-color: black;
+	font-size: -webkit-text-size-adjust: none;
+}
+p {
+	font-family: "Courier New", Courier, monospace;
+}
+td {
+	font-family: "Courier New", Courier, monospace;
+	font-size: -webkit-text-size-adjust: none;
+}
+</style>
+<script>
+function update()
+{
+	var today = new Date();
+	var h = today.getUTCHours();
+	var m = today.getUTCMinutes();
+	var s = today.getUTCSeconds();
+    
+    {
+        var oTable = document.getElementById('myTable');
+		
+		//calculate offset
+		{
+			var rowLength = oTable.rows.length;
+
+			for (i = 0; i < rowLength; i++)
+			{
+				var thisCell = oTable.rows.item(i).cells;
+
+				var thisResult = thisCell.item(0).innerHTML.split(":");
+				
+				var dayInSeconds = 24 * 60 * 60;
+				var utcInSeconds = (h * 60 * 60) + (m * 60) + s;
+				var rwInSeconds = (parseInt(thisResult[0]) * 60 * 60) + (parseInt(thisResult[1]) * 60);
+
+				var secondsTillReward = rwInSeconds - utcInSeconds;
+				
+				if(secondsTillReward < 0)
+				{
+					secondsTillReward = secondsTillReward + dayInSeconds;
+				}
+				
+				var hourCount = Math.floor((secondsTillReward / 60) / 60);
+				var minuteCount = Math.floor((secondsTillReward - (hourCount * 60 * 60)) / 60);
+				var secondCount = secondsTillReward - ((hourCount * 60 * 60) + (minuteCount * 60));
+				
+				thisCell.item(3).innerHTML = hourCount + ":" + checkTime(minuteCount) + ":" + checkTime(secondCount);				
+			}
+		}
+		
+		//colour cells
+		{
+			var rowLength = oTable.rows.length;
+			var enemyTag = "[]";
+
+			for (i = 0; i < rowLength; i++)
+			{
+				var thisCell = oTable.rows.item(i).cells;
+
+				var thisResult = thisCell.item(3).innerHTML.split(":");
+				
+				if(thisCell.item(1).innerHTML == enemyTag)
+				{
+                    thisCell.item(0).style.color = "plum";
+					thisCell.item(1).style.color = "plum";
+                    thisCell.item(2).style.color = "plum";
+					thisCell.item(3).style.color = "plum";
+				}
+				else if(parseInt(thisResult[0]) == 0 || (parseInt(thisResult[0]) == 23 && parseInt(thisResult[1]) > 57))
+				{
+                    thisCell.item(0).style.color = "red";
+					thisCell.item(1).style.color = "red";
+                    thisCell.item(2).style.color = "red";
+					thisCell.item(3).style.color = "red";
+				}
+				else if(parseInt(thisResult[0]) == 1)
+				{
+                    thisCell.item(0).style.color = "orange";
+					thisCell.item(1).style.color = "orange";
+                    thisCell.item(2).style.color = "orange";
+                    thisCell.item(3).style.color = "orange";
+				}
+				else if(parseInt(thisResult[0]) == 2)
+				{
+                    thisCell.item(0).style.color = "yellow";
+					thisCell.item(1).style.color = "yellow";
+                    thisCell.item(2).style.color = "yellow";
+                    thisCell.item(3).style.color = "yellow";
+				}
+				else if(parseInt(thisResult[0]) == 23 || parseInt(thisResult[0]) == 22)
+				{
+                    thisCell.item(0).style.color = "greenyellow";
+					thisCell.item(1).style.color = "greenyellow";
+                    thisCell.item(2).style.color = "greenyellow";
+                    thisCell.item(3).style.color = "greenyellow";
+				}
+				else if(parseInt(thisResult[0]) <= 20 && parseInt(thisResult[0]) >= 13)
+				{
+                    thisCell.item(0).style.color = "skyblue";
+					thisCell.item(1).style.color = "skyblue";
+                    thisCell.item(2).style.color = "skyblue";
+                    thisCell.item(3).style.color = "skyblue";
+				}
+				else
+				{
+                    thisCell.item(0).style.color = "white";
+					thisCell.item(1).style.color = "white";
+                    thisCell.item(2).style.color = "white";
+                    thisCell.item(3).style.color = "white";
+				}
+			}
+		}
+
+		//sort
+		{
+			var done = false;
+			
+			while(done == false)
+			{
+				done = true;
+			
+				var rowLength = oTable.rows.length;
+
+				for (i = 0; i < rowLength - 1; i++)
+				{
+					var firstCell = oTable.rows.item(i).cells;
+					var secondCell = oTable.rows.item(i + 1).cells;
+					
+					var firstValues = firstCell.item(3).innerHTML.split(":");
+					var secondValues = secondCell.item(3).innerHTML.split(":");
+                    
+                    var firstHour = parseInt(firstValues[0]);
+                    var secondHour = parseInt(secondValues[0]);
+                    
+                    if(firstHour >= 22)
+                    {
+                        firstHour = firstHour - 24;
+                    }
+                    
+                    if(secondHour >= 22)
+                    {
+                        secondHour = secondHour - 24;
+                    }
+
+					if(firstHour > secondHour || (parseInt(firstValues[0]) == parseInt(secondValues[0]) && parseInt(firstValues[1]) > parseInt(secondValues[1])))
+					{
+						var tempTime = firstCell.item(0).innerHTML;
+						var tempGuild = firstCell.item(1).innerHTML;
+						var tempName = firstCell.item(2).innerHTML;
+						var tempOffset = firstCell.item(3).innerHTML;
+						
+						firstCell.item(0).innerHTML = secondCell.item(0).innerHTML;
+						firstCell.item(1).innerHTML = secondCell.item(1).innerHTML;
+						firstCell.item(2).innerHTML = secondCell.item(2).innerHTML;
+						firstCell.item(3).innerHTML = secondCell.item(3).innerHTML;
+
+						secondCell.item(0).innerHTML = tempTime;
+						secondCell.item(1).innerHTML = tempGuild;
+						secondCell.item(2).innerHTML = tempName;
+						secondCell.item(3).innerHTML = tempOffset;
+						
+						done = false;
+					}
+				}
+			}
+		}
+    }
+	
+	{
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        "Current Time: " + h + ":" + m + ":" + s;
+    }
+    
+    var t = setTimeout(update, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="update()">
+
+
+<p>
+<font color="red">WorldElite Reward Times</font><br/>
+</p>
+
+<p>
+<font size="2" color="greenyellow">Cooldown, might lower if asked</font><br/>
+<font size="2" color="red">Critical, do not attack!</font><br/>
+<font size="2" color="orange">Climbing, avoid where possible</font><br/>
+<font size="2" color="yellow">Waiting, attack if needed</font><br/>
+<font size="2" color="white">Inactive, fine to attack</font><br/>
+<font size="2" color="skyblue">Probably Sleeping, fine to attack</font><br/>
+<font size="2" color="plum">Enemy! Attack, Attack, Attack!</font><br/>
+</p>
+
+<p><div id="txt"></div></p>
+
+<table id="myTable">
+	<tr>
+        <td>1:00</td>
+        <td>[W]</td>
+        <td>Pask</td>
+        <td>uninitialised</td>
+    </tr>
+    <tr>
+        <td>1:00</td>
+        <td>[W]</td>
+        <td>psycho</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>2:00</td>
+        <td>[W]</td>
+        <td>lovebug</td>
+        <td>uninitialised</td>
+    </tr>
+    <tr>
+        <td>5:00</td>
+        <td>[W]</td>
+        <td>Caution</td>
+        <td>uninitialised</td>
+    </tr>
+    <tr>
+        <td>5:00</td>
+        <td>[W]</td>
+        <td>Strybie</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>7:00</td>
+        <td>[W]</td>
+        <td>Fenomeno</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>8:00</td>
+        <td>[W]</td>
+        <td>Ak Chol</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>8:00</td>
+        <td>[W]</td>
+        <td>Oyabun</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>9:00</td>
+        <td>[W]</td>
+        <td>Right</td>
+        <td>uninitialised</td>
+    </tr>
+    <tr>
+        <td>10:00</td>
+        <td>[W]</td>
+        <td>Vanilla</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>11:00</td>
+        <td>[W]</td>
+        <td>Azeroth</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>11:00</td>
+        <td>[W]</td>
+        <td>SJ</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>11:00</td>
+        <td>[W]</td>
+        <td>Blackswan</td>
+        <td>uninitialised</td>
+    </tr>
+    <tr>
+        <td>12:00</td>
+        <td>[W]</td>
+        <td>Duck or</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>12:00</td>
+        <td>[W]</td>
+        <td>Ares</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>13:00</td>
+        <td>[W]</td>
+        <td>Iori</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>13:00</td>
+        <td>[W]</td>
+        <td>Maxcool</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>13:00</td>
+        <td>[W]</td>
+        <td>nuxxx</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>13:00</td>
+        <td>[W]</td>
+        <td>Zurest</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>13:00</td>
+        <td>[W]</td>
+        <td>K1RK</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>14:00</td>
+        <td>[W]</td>
+        <td>Or Tel</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>14:00</td>
+        <td>[W]</td>
+        <td>k3ntu</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>14:00</td>
+        <td>[W]</td>
+        <td>Ming</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>14:00</td>
+        <td>[W]</td>
+        <td>Richie</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>14:00</td>
+        <td>[W]</td>
+        <td>Topgun</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>14:00</td>
+        <td>[W]</td>
+        <td>Preman</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>14:30</td>
+        <td>[W]</td>
+        <td>Carlsberg</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>14:30</td>
+        <td>[W]</td>
+        <td>Kukujibai</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>15:00</td>
+        <td>[W]</td>
+        <td>Vayen</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>15:00</td>
+        <td>[W]</td>
+        <td>Kinoey</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>15:30</td>
+        <td>[W]</td>
+        <td>Miki</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>16:00</td>
+        <td>[W]</td>
+        <td>eRazor</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>16:00</td>
+        <td>[W]</td>
+        <td>Lio</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>16:00</td>
+        <td>[W]</td>
+        <td>Buffalobill</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>17:00</td>
+        <td>[W]</td>
+        <td>Xbeng</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>17:30</td>
+        <td>[W]</td>
+        <td>Ace</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>18:00</td>
+        <td>[W]</td>
+        <td>samedy</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>16:30</td>
+        <td>[W]</td>
+        <td>Chonk</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>19:00</td>
+        <td>[W]</td>
+        <td>Roizlcab</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>19:00</td>
+        <td>[W]</td>
+        <td>pitti</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>19:00</td>
+        <td>[W]</td>
+        <td>ozzy34</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>19:00</td>
+        <td>[W]</td>
+        <td>Akayus</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>20:00</td>
+        <td>[W]</td>
+        <td>Sponk</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>20:00</td>
+        <td>[W]</td>
+        <td>Rock</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>22:00</td>
+        <td>[W]</td>
+        <td>Nops</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>23:00</td>
+        <td>[W]</td>
+        <td>RedZinc</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>23:00</td>
+        <td>[W]</td>
+        <td>D</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>18:00</td>
+        <td>[W]</td>
+        <td>Zhang</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>17:00</td>
+        <td>[W]</td>
+        <td>Truff</td>
+        <td>uninitialised</td>
+    </tr>
+
+	<tr>
+        <td>22:00</td>
+        <td>[]</td>
+        <td>Nunoless</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>13:00</td>
+        <td>[]</td>
+        <td>zeroless</td>
+        <td>uninitialised</td>
+    </tr>
+	<tr>
+        <td>15:00</td>
+        <td>[]</td>
+        <td>thiendi</td>
+        <td>uninitialised</td>
+    </tr>
+	
+</table>
+
+</body>
+</html>
