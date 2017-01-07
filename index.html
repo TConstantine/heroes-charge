@@ -29,7 +29,7 @@ function update()
     
     {
         var spartanMemberList = document.getElementById('spartanMemberList');
-	var numberOfMembers = spartanMemberList.rows.length;
+		var numberOfMembers = spartanMemberList.rows.length;
 		
 		// Calculate offset
 		{
@@ -58,13 +58,15 @@ function update()
 				if (localTimeInSeconds > dayInSeconds) {
 					localTimeInSeconds = localTimeInSeconds - dayInSeconds;
 				}
+				else if (localTimeInSeconds < 0) {
+					localTimeInSeconds = dayInSeconds + localTimeInSeconds;
+				}
 
 				// Calculate the remaining time before next rewards
 				if (localTimeInSeconds < rewardHourInSeconds) {
 					secondsTillReward = rewardHourInSeconds - localTimeInSeconds;
 				}
 				else {
-					console.log(currentMember.item(2).innerHTML);
 					secondsTillReward = (dayInSeconds - localTimeInSeconds) + rewardHourInSeconds;
 				}
 				
@@ -401,7 +403,7 @@ function checkTime(i) {
         	<td></td>
     	</tr>
 	<tr>
-		<td>07:00</td>
+		<td>-10:00</td>
         	<td>[S]</td>
         	<td>Master Kam</td>
         	<td></td>
