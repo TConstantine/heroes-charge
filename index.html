@@ -17,6 +17,10 @@ td {
 	font-family: "Courier New", Courier, monospace;
 	font-size: -webkit-text-size-adjust: none;
 }
+
+.messages td {
+	padding-right: 15px;
+}
 </style>
 <script>
 function update()
@@ -81,62 +85,31 @@ function update()
 		
 		// Set the correct colors into cells
 		{
-			var enemyTag = "[]";
-
 			for (i = 0; i < numberOfMembers; i++)
 			{
 				var thisCell = spartanMemberList.rows.item(i).cells;
 
 				var thisResult = thisCell.item(3).innerHTML.split(":");
-				
-				if(thisCell.item(1).innerHTML == enemyTag)
+
+				if (parseInt(thisResult[0]) == 0 || (parseInt(thisResult[0]) == 23 && parseInt(thisResult[1]) > 57))
 				{
-                    			thisCell.item(0).style.color = "plum";
-					thisCell.item(1).style.color = "plum";
-                    			thisCell.item(2).style.color = "plum";
-					thisCell.item(3).style.color = "plum";
+					applyColor(thisCell, "red");
 				}
-				else if(parseInt(thisResult[0]) == 0 || (parseInt(thisResult[0]) == 23 && parseInt(thisResult[1]) > 57))
+				else if (parseInt(thisResult[0]) == 1)
 				{
-                    			thisCell.item(0).style.color = "red";
-					thisCell.item(1).style.color = "red";
-                    			thisCell.item(2).style.color = "red";
-					thisCell.item(3).style.color = "red";
+					applyColor(thisCell, "orange");
 				}
-				else if(parseInt(thisResult[0]) == 1)
+				else if (parseInt(thisResult[0]) == 2)
 				{
-                    			thisCell.item(0).style.color = "orange";
-					thisCell.item(1).style.color = "orange";
-                    			thisCell.item(2).style.color = "orange";
-                    			thisCell.item(3).style.color = "orange";
+					applyColor(thisCell, "yellow");
 				}
-				else if(parseInt(thisResult[0]) == 2)
+				else if (parseInt(thisResult[0]) == 23 || parseInt(thisResult[0]) == 22)
 				{
-                    			thisCell.item(0).style.color = "yellow";
-					thisCell.item(1).style.color = "yellow";
-                    			thisCell.item(2).style.color = "yellow";
-                    			thisCell.item(3).style.color = "yellow";
-				}
-				else if(parseInt(thisResult[0]) == 23 || parseInt(thisResult[0]) == 22)
-				{
-                    			thisCell.item(0).style.color = "greenyellow";
-					thisCell.item(1).style.color = "greenyellow";
-                    			thisCell.item(2).style.color = "greenyellow";
-                    			thisCell.item(3).style.color = "greenyellow";
-				}
-				else if(parseInt(thisResult[0]) <= 20 && parseInt(thisResult[0]) >= 13)
-				{
-                    			thisCell.item(0).style.color = "skyblue";
-					thisCell.item(1).style.color = "skyblue";
-                    			thisCell.item(2).style.color = "skyblue";
-                    			thisCell.item(3).style.color = "skyblue";
+                    applyColor(thisCell, "greenyellow");
 				}
 				else
 				{
-                    			thisCell.item(0).style.color = "white";
-					thisCell.item(1).style.color = "white";
-                    			thisCell.item(2).style.color = "white";
-                    			thisCell.item(3).style.color = "white";
+                    applyColor(thisCell, "white");
 				}
 			}
 		}
@@ -157,18 +130,18 @@ function update()
 					var firstValues = firstCell.item(3).innerHTML.split(":");
 					var secondValues = secondCell.item(3).innerHTML.split(":");
                     
-                    			var firstHour = parseInt(firstValues[0]);
-                    			var secondHour = parseInt(secondValues[0]);
-                    
-                    			if (firstHour >= 22)
-                    			{
-                        			firstHour = firstHour - 24;
-                    			}
-                    
-                    			if (secondHour >= 22)
-                    			{
-                        			secondHour = secondHour - 24;
-                    			}
+					var firstHour = parseInt(firstValues[0]);
+					var secondHour = parseInt(secondValues[0]);
+		
+					if (firstHour >= 22)
+					{
+						firstHour = firstHour - 24;
+					}
+		
+					if (secondHour >= 22)
+					{
+						secondHour = secondHour - 24;
+					}
 
 					if (firstHour > secondHour || (parseInt(firstValues[0]) == parseInt(secondValues[0]) && parseInt(firstValues[1]) > parseInt(secondValues[1])))
 					{
@@ -198,7 +171,7 @@ function update()
         minutes = checkTime(minutes);
         seconds = checkTime(seconds);
         document.getElementById('txt').innerHTML =
-        "Current Time: " + hours + ":" + minutes + ":" + seconds;
+        "GMT: " + hours + ":" + minutes + ":" + seconds;
 	document.getElementById('txt').style.color = "white";
     }
     
@@ -208,21 +181,44 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
 }
+
+function applyColor(cell, color) {
+	cell.item(0).style.color = color;
+	cell.item(1).style.color = color;
+	cell.item(2).style.color = color;
+	cell.item(3).style.color = color;
+}
 </script>
 </head>
 <body onload="update()">
 
 <p>
-<font color="red">Spartan Reward Times (GMT based)</font><br/>
+<h1><font color="red">Spartan Reward Times (GMT based)</font></h1>
 </p>
 
 <p>
-<font size="2" color="greenyellow">Cooldown, might lower if asked</font><br/>
-<font size="2" color="red">Critical, do not attack!</font><br/>
-<font size="2" color="orange">Climbing, avoid where possible</font><br/>
-<font size="2" color="yellow">Waiting, attack if needed</font><br/>
-<font size="2" color="white">Inactive, fine to attack</font><br/>
-<font size="2" color="skyblue">Probably Sleeping, fine to attack</font><br/>
+<table class="messages">
+	<tr>
+		<td><font size="3" color="greenyellow">Done</font</td>
+		<td><font size="3" color="greenyellow">Collected rewards, might lower power if asked</font</td>
+	</tr>
+	<tr>
+		<td><font size="3" color="red">Critical</font</td>
+		<td><font size="3" color="red">Collecting rewards DO NOT ATTACK!</font</td>
+	</tr>
+	<tr>
+		<td><font size="3" color="orange">Climbing</font</td>
+		<td><font size="3" color="orange">Attack ONLY if necessary</font</td>
+	</tr>
+	<tr>
+		<td><font size="3" color="yellow">Waiting</font</td>
+		<td><font size="3" color="yellow">Safe to attack, avoid if necessary</font</td>
+	</tr>
+	<tr>
+		<td><font size="3" color="white">Inactive</font</td>
+		<td><font size="3" color="white">Safe to attack</font</td>
+	</tr>
+</table>
 </p>
 
 <p><div id="txt"></div></p>
@@ -230,10 +226,10 @@ function checkTime(i) {
 <table id="spartanMemberList">
 	<tr>
 		<td>-01:00</td>
-        	<td>[S]</td>
-        	<td>akuma</td>
-        	<td></td>
-    	</tr>
+        <td>[S]</td>
+        <td>akuma</td>
+        <td></td>
+    </tr>
 	<tr>
 		<td>03:00</td>
         	<td>[S]</td>
@@ -532,4 +528,3 @@ function checkTime(i) {
 
 </body>
 </html>
-
