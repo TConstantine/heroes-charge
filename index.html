@@ -146,19 +146,22 @@ function update()
 					if (firstHour > secondHour || (parseInt(firstValues[0]) == parseInt(secondValues[0]) && parseInt(firstValues[1]) > parseInt(secondValues[1])))
 					{
 						var tempTime = firstCell.item(0).innerHTML;
-						var tempGuild = firstCell.item(1).innerHTML;
-						var tempName = firstCell.item(2).innerHTML;
-						var tempOffset = firstCell.item(3).innerHTML;
+						var tempArena = firstCell.item(1).innerHTML;
+						var tempGuild = firstCell.item(2).innerHTML;
+						var tempName = firstCell.item(3).innerHTML;
+						var tempOffset = firstCell.item(4).innerHTML;
 						
 						firstCell.item(0).innerHTML = secondCell.item(0).innerHTML;
 						firstCell.item(1).innerHTML = secondCell.item(1).innerHTML;
 						firstCell.item(2).innerHTML = secondCell.item(2).innerHTML;
 						firstCell.item(3).innerHTML = secondCell.item(3).innerHTML;
+						firstCell.item(4).innerHTML = secondCell.item(4).innerHTML;
 
 						secondCell.item(0).innerHTML = tempTime;
-						secondCell.item(1).innerHTML = tempGuild;
-						secondCell.item(2).innerHTML = tempName;
-						secondCell.item(3).innerHTML = tempOffset;
+						secondCell.item(1).innerHTML = tempArena;
+						secondCell.item(2).innerHTML = tempGuild;
+						secondCell.item(3).innerHTML = tempName;
+						secondCell.item(4).innerHTML = tempOffset;
 						
 						done = false;
 					}
