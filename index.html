@@ -79,7 +79,7 @@ function update()
 				var secondCount = secondsTillReward - ((hourCount * 60 * 60) + (minuteCount * 60));
 				
 				// Display the time before rewards
-				currentMember.item(3).innerHTML = hourCount + ":" + checkTime(minuteCount) + ":" + checkTime(secondCount);				
+				currentMember.item(4).innerHTML = hourCount + ":" + checkTime(minuteCount) + ":" + checkTime(secondCount);				
 			}
 		}
 		
@@ -89,7 +89,7 @@ function update()
 			{
 				var thisCell = spartanMemberList.rows.item(i).cells;
 
-				var thisResult = thisCell.item(3).innerHTML.split(":");
+				var thisResult = thisCell.item(4).innerHTML.split(":");
 
 				if (parseInt(thisResult[0]) == 0 || (parseInt(thisResult[0]) == 23 && parseInt(thisResult[1]) > 57))
 				{
@@ -105,11 +105,11 @@ function update()
 				}
 				else if (parseInt(thisResult[0]) == 23 || parseInt(thisResult[0]) == 22)
 				{
-                    applyColor(thisCell, "greenyellow");
+                    			applyColor(thisCell, "greenyellow");
 				}
 				else
 				{
-                    applyColor(thisCell, "white");
+                    			applyColor(thisCell, "white");
 				}
 			}
 		}
@@ -127,8 +127,8 @@ function update()
 					var firstCell = spartanMemberList.rows.item(i).cells;
 					var secondCell = spartanMemberList.rows.item(i + 1).cells;
 					
-					var firstValues = firstCell.item(3).innerHTML.split(":");
-					var secondValues = secondCell.item(3).innerHTML.split(":");
+					var firstValues = firstCell.item(4).innerHTML.split(":");
+					var secondValues = secondCell.item(4).innerHTML.split(":");
                     
 					var firstHour = parseInt(firstValues[0]);
 					var secondHour = parseInt(secondValues[0]);
@@ -187,6 +187,7 @@ function applyColor(cell, color) {
 	cell.item(1).style.color = color;
 	cell.item(2).style.color = color;
 	cell.item(3).style.color = color;
+	cell.item(4).style.color = color;
 }
 </script>
 </head>
