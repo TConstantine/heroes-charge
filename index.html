@@ -32,8 +32,8 @@ function update()
 	var seconds = time.getUTCSeconds();
     
     {
-        var spartanMemberList = document.getElementById('spartanMemberList');
-		var numberOfMembers = spartanMemberList.rows.length;
+        var memberList = document.getElementById('memberList');
+	var numberOfMembers = memberList.rows.length;
 		
 		// Calculate offset
 		{
@@ -47,7 +47,7 @@ function update()
 
 			for (i = 0; i < numberOfMembers; i++)
 			{
-				var currentMember = spartanMemberList.rows.item(i).cells;
+				var currentMember = memberList.rows.item(i).cells;
 
 				// Split the timezone into hours and minutes
 				var timezone = currentMember.item(0).innerHTML.split(":");
@@ -87,7 +87,7 @@ function update()
 		{
 			for (i = 0; i < numberOfMembers; i++)
 			{
-				var thisCell = spartanMemberList.rows.item(i).cells;
+				var thisCell = memberList.rows.item(i).cells;
 
 				var thisResult = thisCell.item(4).innerHTML.split(":");
 
@@ -124,8 +124,8 @@ function update()
 
 				for (i = 0; i < numberOfMembers - 1; i++)
 				{
-					var firstCell = spartanMemberList.rows.item(i).cells;
-					var secondCell = spartanMemberList.rows.item(i + 1).cells;
+					var firstCell = memberList.rows.item(i).cells;
+					var secondCell = memberList.rows.item(i + 1).cells;
 					
 					var firstValues = firstCell.item(4).innerHTML.split(":");
 					var secondValues = secondCell.item(4).innerHTML.split(":");
@@ -240,7 +240,7 @@ function applyColor(cell, color) {
 
 <p><div id="txt"></div></p>
 
-<table id="spartanMemberList">
+<table id="memberList">
 	<tr>
 		<td>01:00</td>
 		<td>?</td>
