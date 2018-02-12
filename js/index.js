@@ -65,7 +65,6 @@ $(document).ready(function() {
 		]),
 		new Guild("Inhuman 2", "[127]", [
 			new Member("Antz r", "10:00", "A"),
-			new Member("Antz Star", "-08:00", "GA"),
 			new Member("Anunah", "06:00", "GA"),
 			new Member("aTn", "02:00", "A"),
 			new Member("Bossanta", "01:00", "A"),
@@ -89,6 +88,7 @@ $(document).ready(function() {
 		]),
 		new Guild("300", "[300]", [
 			new Member("Andy one", "11:00", "?"),
+			new Member("Antz Star", "-09:00", "GA"),
 			new Member("Coccaribe", "00:00", "?"),
 			new Member("Ephialtes", "-01:00", "?"),
 			new Member("Faruk", "01:00", "?"),
