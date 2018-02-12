@@ -206,11 +206,11 @@ $(document).ready(function() {
 			new Member("Salvator", "06:30", "?"),
 			new Member("SemperFi", "01:00", "?"),
 			new Member("Smithe", "-05:00", "?"),
-			new Member("Stolf", "03:00", "?"),
+			new Member("Stolf", "02:00", "?"),
 			new Member("TaMiWai", "03:30", "?"),
 			new Member("Tartines", "00:00", "?"),
 			new Member("Tic-Tac", "05:30", "?"),
-			new Member("Wiz", "03:00", "?"),
+			new Member("Wiz", "02:00", "?"),
 			new Member("Zachek", "06:00", "?")
 		]),
 		new Guild("Illuminati", "[Ill]", [
