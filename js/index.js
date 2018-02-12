@@ -239,7 +239,7 @@ $(document).ready(function() {
 			new Member("Moroloco", "02:00", "?"),
 			new Member("Motos", "02:00", "?"),
 			new Member("Neurodude", "-05:00", "?"),
-			new Member("Nicko", "02:00", "?"),
+			new Member("Nicko", "-01:00", "?"),
 			new Member("Odinsan", "00:00", "?"),
 			new Member("Play", "01:00", "?"),
 			new Member("Pro-noob", "10:00", "?"),
