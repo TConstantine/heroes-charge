@@ -16,7 +16,7 @@ $(document).ready(function() {
 		new Guild("Inhuman", "[127]", [
 			new Member("Abz", "01:00", "GA"),
 			new Member("Alex", "03:00", "?"),
-			new Member("Alisa", "07:00", "?"),
+			new Member("Alisa", "12:00", "?"),
 			new Member("Andriano", "10:00", "A"),
 			new Member("Banda", "09:00", "A"),
 			new Member("Barabashka", "01:00", "?"),
@@ -37,7 +37,7 @@ $(document).ready(function() {
 			new Member("Holo", "00:00", "?"),
 			new Member("Hunter", "05:00", "?"),
 			new Member("John Ketch", "13:00", "A"),
-			new Member("Kitty", "09:30", "A"),
+			new Member("Kitty", "12:00", "A"),
 			new Member("Kopcap", "05:30", "GA"),
 			new Member("KviSt", "10:00", "GA"),
 			new Member("Largent", "-07:00", "A"),
