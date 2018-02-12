@@ -221,6 +221,7 @@ $(document).ready(function() {
 			new Member(":BEAST:", "-02:00", "?"),
 			new Member("Belerz", "02:00", "?"),
 			new Member("Daytona", "01:00", "?"),
+			new Member("Earlender", "02:00", "?"),
 			new Member("Giantbanes", "-06:00", "?"),
 			new Member("Gurlug", "01:00", "?"),
 			new Member("iube.rom", "02:00", "?"),
