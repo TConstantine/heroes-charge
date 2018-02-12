@@ -1,0 +1,18 @@
+font {
+	size:-webkit-text-size-adjust: none;
+}
+body {
+	background-color: black;
+	font-size: -webkit-text-size-adjust: none;
+}
+p {
+	font-family: "Courier New", Courier, monospace;
+}
+td {
+	font-family: "Courier New", Courier, monospace;
+	font-size: -webkit-text-size-adjust: none;
+}
+
+.messages td {
+	padding-right: 15px;
+}
