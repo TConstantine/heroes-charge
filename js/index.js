@@ -40,7 +40,7 @@ $(document).ready(function() {
 			new Member("Kitty", "12:00", "A"),
 			new Member("Kopcap", "05:30", "GA"),
 			new Member("KviSt", "10:00", "GA"),
-			new Member("Largent", "-07:00", "A"),
+			new Member("Largent", "-08:00", "A"),
 			new Member("Lily", "09:30", "GA"),
 			new Member("Lime", "05:30", "A"),
 			new Member("Lucifer", "02:00", "?"),
