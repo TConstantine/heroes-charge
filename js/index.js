@@ -19,7 +19,7 @@ $(document).ready(function() {
 			new Member("Alisa", "12:00", "?"),
 			new Member("Andriano", "10:00", "A"),
 			new Member("Banda", "09:00", "A"),
-			new Member("Barabashka", "01:00", "?"),
+			new Member("Barabashka", "02:00", "?"),
 			new Member("Basta", "05:00", "?"),
 			new Member("Bevier", "02:00", "A"),
 			new Member("Blaster", "01:00", "A"),
