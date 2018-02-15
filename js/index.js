@@ -53,7 +53,7 @@ $(document).ready(function() {
 			new Member("Raven", "06:00", "A"),
 			new Member("Saki", "05:00", "A"),
 			new Member("Shabou", "-08:00", "A"),
-			new Member("Shining", "01:00", "A"),
+			new Member("Shining", "00:00", "A"),
 			new Member("Suzuya", "00:00", "?"),
 			new Member("Torch", "05:45", "?"),
 			new Member("Utero", "01:00", "GA"),
