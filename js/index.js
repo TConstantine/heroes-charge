@@ -121,7 +121,7 @@ $(document).ready(function() {
 			new Member("Rage", "01:00", "?"),
 			new Member("Raven", "01:00", "?"),
 			new Member("T!no", "-02:00", "?"),
-			new Member("Ultra", "10:00", "?"),
+			new Member("Ultra", "01:00", "?"),
 			new Member("Underdog", "-01:00", "?"),
 			new Member("Unkzilla", "-09:00", "?"),
 			new Member("Znorky", "01:00", "?")
