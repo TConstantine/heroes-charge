@@ -226,6 +226,7 @@ $(document).ready(function() {
 			new Member("Giantbanes", "-06:00", "?"),
 			new Member("Gurlug", "01:00", "?"),
 			new Member("iube.rom", "02:00", "?"),
+			new Member("Jariya", "11:00", "?"),
 			new Member("Jeysun", "-05:00", "?"),
 			new Member("Jurgen", "01:00", "?"),
 			new Member("Kacenty", "01:00", "?"),
