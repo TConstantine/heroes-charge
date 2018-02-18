@@ -245,6 +245,7 @@ $(document).ready(function() {
 			new Member("Odinsan", "00:00", "?"),
 			new Member("Play", "01:00", "?"),
 			new Member("Pro-noob", "10:00", "?"),
+			new Member("Q&K", "03:00", "?"),
 			new Member("Razorbak", "-06:00", "?"),
 			new Member("Renegade", "10:00", "?"),
 			new Member("Sage M", "04:00", "?"),
