@@ -117,6 +117,7 @@ $(document).ready(function() {
 			new Member("Nord", "03:00", "?"),
 			new Member("Pinup", "-07:00", "?"),
 			new Member("Pipo", "06:30", "?"),
+			new Member("Pippett", "01:00", "?"),
 			new Member("Pong", "-08:00", "?"),
 			new Member("Popeye", "01:00", "?"),
 			new Member("Rage", "01:00", "?"),
