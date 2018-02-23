@@ -81,7 +81,6 @@ $(document).ready(function() {
 			new Member("Partizan", "05:00", "A"),
 			new Member("Rubyheart", "10:00", "A"),
 			new Member("Tinker", "03:00", "?"),
-			new Member("Uziah", "02:00", "?"),
 			new Member("Valkyrie", "05:00", "?"),
 			new Member("Wally", "02:00", "?"),
 			new Member("Westo", "08:00", "?")
@@ -109,7 +108,6 @@ $(document).ready(function() {
 			new Member("Madara", "02:00", "?"),
 			new Member("Marc", "01:00", "?"),
 			new Member("Mautie", "01:00", "?"),
-			new Member("Mystique", "-05:00", "?"),
 			new Member("Mysto", "-05:00", "?"),
 			new Member("NemesisX", "01:00", "?"),
 			new Member("Nikani", "02:00", "?"),
@@ -156,6 +154,7 @@ $(document).ready(function() {
 			new Member("MikeHunt", "-08:00", "?"),
 			new Member("Murderer", "02:00", "?"),
 			new Member("Murf", "07:00", "?"),
+			new Member("Mystique", "-05:00", "?"),
 			new Member("Nosferatu", "-08:00", "?"),
 			new Member("Panic", "01:00", "?"),
 			new Member("Pinhead", "02:00", "?"),
@@ -266,6 +265,9 @@ $(document).ready(function() {
 			new Member("Xenadin", "08:00", "?"),
 			new Member("Xenathal", "-08:00", "?"),
 			new Member("Zeent", "01:00", "?"),
+		]),
+		new Guild("Poccnr", "[Rus]", [
+			new Member("Uziah", "02:00", "?")
 		])
 	]
 	
