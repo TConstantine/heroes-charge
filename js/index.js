@@ -43,7 +43,7 @@ $(document).ready(function() {
 			new Member("Lime", "05:30", "A"),
 			new Member("Lucifer", "02:00", "?"),
 			new Member("Maxim", "06:00", "?"),
-			new Member("Minseo", "08:00", "A"),
+			new Member("Minseo", "-08:00", "A"),
 			new Member("Mr. Hyde", "12:00", "GA"),
 			new Member("Nishan", "04:00", "A"),
 			new Member("Pashtet", "07:00", "GA"),
