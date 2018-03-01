@@ -265,6 +265,7 @@ $(document).ready(function() {
 			new Member("Zeent", "01:00", "?"),
 		]),
 		new Guild("Poccnr", "[Rus]", [
+			new Member("Nikitos", "05:30", "?"),
 			new Member("Uziah", "02:00", "?")
 		])
 	]
