@@ -177,7 +177,9 @@ $(document).ready(function() {
 			new Member("Akuma.k", "02:00", "?"),
 			new Member("Anagrys", "08:00", "?"),
 			new Member("Angerphyte", "02:00", "?"),
+			new Member("Axl", "01:00", "?"),
 			new Member("Axtli", "02:00", "?"),
+			new Member("BlackGod", "01:00", "?"),
 			new Member("Botto", "-01:00", "?"),
 			new Member("Diablo", "13:00", "?"),
 			new Member("Dipre team", "01:00", "?"),
@@ -189,6 +191,7 @@ $(document).ready(function() {
 			new Member("Filtz", "02:00", "?"),
 			new Member("Gallagher", "-06:00", "?"),
 			new Member("Geralt", "06:00", "?"),
+			new Member("gesunegro", "01:00", "?"),
 			new Member("Hades", "-06:00", "?"),
 			new Member("Hehtosai", "-05:00", "?"),
 			new Member("Joel", "02:00", "?"),
@@ -198,7 +201,7 @@ $(document).ready(function() {
 			new Member("Kirito", "11:00", "?"),
 			new Member("Krakmart", "02:00", "?"),
 			new Member("Lance", "07:00", "?"),
-			new Member("Maraa", "05:45", "?"),
+			new Member("Leezer", "01:00", "?"),
 			new Member("Naoned", "02:00", "?"),
 			new Member("Pandrone", "01:00", "?"),
 			new Member("Panther", "13:00", "?"),
@@ -267,6 +270,9 @@ $(document).ready(function() {
 		new Guild("Poccnr", "[Rus]", [
 			new Member("Nikitos", "05:30", "?"),
 			new Member("Uziah", "02:00", "?")
+		]),
+		new Guild("Kaamelott", "[K]", [
+			new Member("Maraa", "05:45", "?")
 		])
 	]
 	
