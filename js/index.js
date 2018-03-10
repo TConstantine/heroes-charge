@@ -164,7 +164,6 @@ $(document).ready(function() {
 			new Member("Rogue", "-06:00", "?"),
 			new Member("Rough Souls", "01:00", "?"),
 			new Member("Rox", "10:00", "?"),
-			new Member("Sexy", "-06:00", "?"),
 			new Member("Slusk", "01:00", "?"),
 			new Member("Strohhut", "01:00", "?"),
 			new Member("Teez", "-04:00", "?"),
