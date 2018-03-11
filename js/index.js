@@ -95,7 +95,7 @@ $(document).ready(function() {
 			new Member("Heme", "02:00", "?"),
 			new Member("Henry", "07:00", "?"),
 			new Member("Hirshi", "01:00", "?"),
-			new Member("Judas C", "-05:00", "?"),
+			new Member("Judas C", "-04:00", "?"),
 			new Member("Khorne", "01:00", "?"),
 			new Member("Korupt", "-03:00", "?"),
 			new Member("Kucks", "-05:00", "?"),
