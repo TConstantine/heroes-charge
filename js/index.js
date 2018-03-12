@@ -85,7 +85,7 @@ $(document).ready(function() {
 		]),
 		new Guild("300", "[300]", [
 			new Member("Andy one", "11:00", "?"),
-			new Member("Antz Star", "-09:00", "GA"),
+			new Member("Antz Star", "-10:00", "GA"),
 			new Member("Coccaribe", "00:00", "?"),
 			new Member("Cpot", "-08:00", "?"),
 			new Member("Ephialtes", "-01:00", "?"),
