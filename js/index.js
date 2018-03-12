@@ -111,7 +111,7 @@ $(document).ready(function() {
 			new Member("Nikani", "02:00", "?"),
 			new Member("No 1", "-01:00", "?"),
 			new Member("Nord", "03:00", "?"),
-			new Member("Pinup", "-07:00", "?"),
+			new Member("Pinup", "-06:00", "?"),
 			new Member("Pipo", "06:30", "?"),
 			new Member("Pippett", "01:00", "?"),
 			new Member("Pong", "-08:00", "?"),
@@ -167,7 +167,7 @@ $(document).ready(function() {
 			new Member("Slusk", "01:00", "?"),
 			new Member("Strohhut", "01:00", "?"),
 			new Member("Teez", "-04:00", "?"),
-			new Member("TheRing", "-05:00", "?"),
+			new Member("TheRing", "-04:00", "?"),
 			new Member("T|M", "01:00", "?"),
 			new Member("Tyrolis", "01:00", "?"),
 			new Member("Weezel", "01:00", "?")
