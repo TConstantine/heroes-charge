@@ -268,7 +268,7 @@ $(document).ready(function() {
 			new Member("Nikitos", "05:30", "?"),
 			new Member("Uziah", "02:00", "?")
 		]),
-		new Guild("Kaamelott", "[K]", [
+		new Guild("Frenchy", "[F]", [
 			new Member("Maraa", "05:45", "?")
 		])
 	]
