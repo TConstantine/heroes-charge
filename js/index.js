@@ -45,7 +45,6 @@ $(document).ready(function() {
 			new Member("Lime", "05:30", "A"),
 			new Member("Lucifer", "02:00", "?"),
 			new Member("Maxim", "06:00", "?"),
-			new Member("Minseo", "-09:00", "A"),
 			new Member("Mr. Hyde", "12:00", "GA"),
 			new Member("Msquad", "01:00", "A"),
 			new Member("Nishan", "04:00", "A"),
