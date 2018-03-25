@@ -56,7 +56,7 @@ $(document).ready(function() {
 			new Member("Shining", "00:00", "A"),
 			new Member("Suzuya", "00:00", "?"),
 			new Member("Torch", "05:45", "?"),
-			new Member("Vasya", "02:00", "GA"),
+			new Member("Vasya", "03:00", "GA"),
 			new Member("Vision", "-10:00", "A"),
 			new Member("Witcher", "00:00", "GA"),
 			new Member("XQ", "-01:00", "GA"),
@@ -213,7 +213,7 @@ $(document).ready(function() {
 			new Member("Stolf", "02:00", "?"),
 			new Member("TaMiWai", "03:30", "?"),
 			new Member("Tartines", "00:00", "?"),
-			new Member("Wiz", "02:00", "?"),
+			new Member("Wiz", "03:00", "?"),
 			new Member("Zachek", "06:00", "?")
 		]),
 		new Guild("Illuminati", "[Ill]", [
