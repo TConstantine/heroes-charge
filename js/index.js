@@ -126,7 +126,7 @@ $(document).ready(function() {
 			new Member("Znorky", "01:00", "?")
 		]),
 		new Guild("Evolution", "[Evo]", [
-			new Member("Aleyster", "02:00", "?"),
+			new Member("Aleyster", "03:00", "?"),
 			new Member("Amp'd", "-08:00", "?"),
 			new Member("AssKickA", "02:00", "?"),
 			new Member("Auven", "-05:00", "?"),
@@ -151,7 +151,7 @@ $(document).ready(function() {
 			new Member("Loof", "-05:00", "?"),
 			new Member("Losser", "01:00", "?"),
 			new Member("MikeHunt", "-08:00", "?"),
-			new Member("Murderer", "02:00", "?"),
+			new Member("Murderer", "03:00", "?"),
 			new Member("Murf", "07:00", "?"),
 			new Member("Mystique", "-05:00", "?"),
 			new Member("Nosferatu", "-08:00", "?"),
