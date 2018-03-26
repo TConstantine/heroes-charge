@@ -174,7 +174,7 @@ $(document).ready(function() {
 		]),
 		new Guild("United", "[U]", [
 			new Member("Akuma.k", "02:00", "?"),
-			new Member("Anagrys", "08:00", "?"),
+			new Member("Anagrys", "09:00", "?"),
 			new Member("Angerphyte", "02:00", "?"),
 			new Member("Axl", "01:00", "?"),
 			new Member("Axtli", "02:00", "?"),
