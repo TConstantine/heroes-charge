@@ -143,7 +143,7 @@ $(document).ready(function() {
 			new Member("Fejz", "01:00", "?"),
 			new Member("Furia", "01:00", "?"),
 			new Member("Heisl", "01:00", "?"),
-			new Member("Hotrod", "-04:00", "?"),
+			new Member("Hotrod", "-03:00", "?"),
 			new Member("Japie", "05:00", "?"),
 			new Member("Keithruby", "08:00", "?"),
 			new Member("Lamilan", "09:00", "?"),
