@@ -60,7 +60,7 @@ $(document).ready(function() {
 			new Member("Vision", "-10:00", "A"),
 			new Member("Witcher", "00:00", "GA"),
 			new Member("XQ", "-01:00", "GA"),
-			new Member("Zidzen", "00:00", "A")
+			new Member("Zidzen", "01:00", "A")
 		]),
 		new Guild("Inhuman 2", "[127]", [
 			new Member("Antz r", "10:00", "A"),
