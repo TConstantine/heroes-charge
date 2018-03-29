@@ -92,7 +92,7 @@ $(document).ready(function() {
 			new Member("Guki", "04:00", "?"),
 			new Member("Heme", "02:00", "?"),
 			new Member("Henry", "07:00", "?"),
-			new Member("Hirshi", "01:00", "?"),
+			new Member("Hirshi", "02:00", "?"),
 			new Member("Judas C", "-04:00", "?"),
 			new Member("KaylaJ", "08:00", "?"),
 			new Member("Khorne", "01:00", "?"),
