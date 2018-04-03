@@ -107,7 +107,7 @@ $(document).ready(function() {
 			new Member("Mautie", "01:00", "?"),
 			new Member("Mysto", "-05:00", "?"),
 			new Member("NemesisX", "01:00", "?"),
-			new Member("Nikani", "02:00", "?"),
+			new Member("Nikani", "03:00", "?"),
 			new Member("No 1", "-01:00", "?"),
 			new Member("Nord", "03:00", "?"),
 			new Member("Pinup", "-06:00", "?"),
