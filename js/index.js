@@ -36,7 +36,6 @@ $(document).ready(function() {
 			new Member("Holo", "00:00", "?"),
 			new Member("Hunter", "05:00", "?"),
 			new Member("John Ketch", "13:00", "A"),
-			new Member("Kitty", "12:00", "A"),
 			new Member("Kopcap", "05:30", "GA"),
 			new Member("KviSt", "10:00", "GA"),
 			new Member("Largent", "-08:00", "A"),
