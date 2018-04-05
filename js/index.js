@@ -23,7 +23,7 @@ $(document).ready(function() {
 			new Member("Basta", "05:00", "?"),
 			new Member("Bevier", "02:00", "A"),
 			new Member("Blaster", "01:00", "A"),
-			new Member("Bossanta", "01:00", "A"),
+			new Member("Bossanta", "05:00", "A"),
 			new Member("Cayen Peps", "-06:00", "A"),
 			new Member("CnApTaK", "13:00", "GA"),
 			new Member("Crom", "-03:00", "A"),
