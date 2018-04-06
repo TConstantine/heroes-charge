@@ -17,7 +17,6 @@ $(document).ready(function() {
 			new Member("Abz", "01:00", "GA"),
 			new Member("Alex", "03:00", "?"),
 			new Member("Alisa", "12:00", "?"),
-			new Member("Andriano", "10:00", "A"),
 			new Member("Anunah", "06:00", "GA"),
 			new Member("Banda", "09:00", "A"),
 			new Member("Basta", "05:00", "?"),
