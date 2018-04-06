@@ -26,7 +26,7 @@ $(document).ready(function() {
 			new Member("CnApTaK", "13:00", "GA"),
 			new Member("Crom", "-03:00", "A"),
 			new Member("Dim", "07:00", "A"),
-			new Member("Dingoes", "10:30", "A"),
+			new Member("Dingo", "09:30", "A"),
 			new Member("Escaria", "-01:00", "A"),
 			new Member("Fantik", "04:00", "GA"),
 			new Member("Flick", "10:00", "A"),
