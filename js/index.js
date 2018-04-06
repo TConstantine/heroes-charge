@@ -67,7 +67,7 @@ $(document).ready(function() {
 			new Member("Khilda", "13:00", "?"),
 			new Member("Lacro", "02:00", "?"),
 			new Member("Lana", "03:00", "?"),
-			new Member("Lilyhuang", "10:30", "?"),
+			new Member("Lilyhuang", "09:30", "?"),
 			new Member("Nightmare", "13:00", "GA"),
 			new Member("Partizan", "05:00", "A"),
 			new Member("Rubyheart", "10:00", "A"),
