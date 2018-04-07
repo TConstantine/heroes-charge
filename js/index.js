@@ -18,6 +18,7 @@ $(document).ready(function() {
 			new Member("Alex", "03:00", "?"),
 			new Member("Anunah", "06:00", "GA"),
 			new Member("Banda", "09:00", "A"),
+			new Member("BaRaBashka", "03:00", "?"),
 			new Member("Basta", "05:00", "?"),
 			new Member("Bevier", "02:00", "A"),
 			new Member("Blaster", "01:00", "A"),
@@ -43,7 +44,6 @@ $(document).ready(function() {
 			new Member("Mr. Hyde", "12:00", "GA"),
 			new Member("Msquad", "01:00", "A"),
 			new Member("Nishan", "04:00", "A"),
-			new Member("Pak", "03:00", "?"),
 			new Member("Pashtet", "07:00", "GA"),
 			new Member("Piggies", "06:00", "GA"),
 			new Member("Raven", "06:00", "A"),
@@ -54,12 +54,10 @@ $(document).ready(function() {
 			new Member("Torch", "05:45", "?"),
 			new Member("Vasya", "03:00", "GA"),
 			new Member("Vision", "-10:00", "A"),
-			new Member("Witcher", "00:00", "GA"),
 			new Member("XQ", "-01:00", "GA"),
 			new Member("Zidzen", "01:00", "A")
 		]),
 		new Guild("Inhuman 2", "[127]", [
-			new Member("Antz r", "10:00", "A"),
 			new Member("aTn", "02:00", "A"),
 			new Member("Eltrololo", "03:00", "A"),
 			new Member("Invalid1337", "01:00", "A"),
@@ -68,13 +66,11 @@ $(document).ready(function() {
 			new Member("Lacro", "02:00", "?"),
 			new Member("Lana", "03:00", "?"),
 			new Member("Lilyhuang", "09:30", "?"),
-			new Member("Nightmare", "13:00", "GA"),
 			new Member("Partizan", "05:00", "A"),
 			new Member("Rubyheart", "10:00", "A"),
 			new Member("Tinker", "03:00", "?"),
 			new Member("Valkyrie", "05:00", "?"),
-			new Member("Wally", "02:00", "?"),
-			new Member("Westo", "08:00", "?")
+			new Member("Wally", "02:00", "?")
 		]),
 		new Guild("300", "[300]", [
 			new Member("Andy one", "11:00", "?"),
