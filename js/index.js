@@ -14,6 +14,7 @@ $(document).ready(function() {
 	
 	var guilds = [
 		new Guild("Inhuman", "[127]", [
+			new Member("6e3..roJloBbl", "10:00", "GA"),
 			new Member("Abz", "01:00", "GA"),
 			new Member("Alex", "03:00", "?"),
 			new Member("Anunah", "06:00", "GA"),
