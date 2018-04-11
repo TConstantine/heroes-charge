@@ -1,9 +1,8 @@
 $(document).ready(function() {
 	// Define object constructors
-	function Member(nickName, timeZone, primaryArena) {
+	function Member(nickName, timeZone) {
 		this.nickName = nickName;
 		this.timeZone = timeZone;
-		this.primaryArena = primaryArena;
 	}
 	
 	function Guild(name, tag, members) {
@@ -14,251 +13,251 @@ $(document).ready(function() {
 	
 	var guilds = [
 		new Guild("Inhuman", "[127]", [
-			new Member("Abz", "01:00", "?"),
-			new Member("Anunah", "06:00", "?"),
-			new Member("Banda", "09:00", "?"),
-			new Member("BaRaBashka", "03:00", "?"),
-			new Member("Basta", "05:00", "?"),
-			new Member("Bevier", "02:00", "?"),
-			new Member("Blaster", "01:00", "?"),
-			new Member("Bossanta", "05:00", "?"),
-			new Member("CnApTaK", "13:00", "?"),
-			new Member("Crom", "-03:00", "?"),
-			new Member("Dim", "07:00", "?"),
-			new Member("Dingo", "09:30", "?"),
-			new Member("Escaria", "-01:00", "?"),
-			new Member("Fantik", "04:00", "?"),
-			new Member("Flick", "10:00", "?"),
-			new Member("Holo", "00:00", "?"),
-			new Member("Hunter", "05:00", "?"),
-			new Member("Khilda", "13:00", "?"),
-			new Member("Kopcap", "05:30", "?"),
-			new Member("KviSt", "10:00", "?"),
-			new Member("Lacro", "02:00", "?"),
-			new Member("Lana", "03:00", "?"),
-			new Member("Largent", "-08:00", "?"),
-			new Member("Lily", "09:30", "?"),
-			new Member("Lilyhuang", "09:30", "?"),
-			new Member("Lime", "05:30", "?"),
-			new Member("Lucifer", "02:00", "?"),
-			new Member("Maxim", "06:00", "?"),
-			new Member("Mr. Hyde", "12:00", "?"),
-			new Member("Msquad", "01:00", "?"),
-			new Member("Nishan", "04:00", "?"),
-			new Member("Piggies", "06:00", "?"),
-			new Member("Raven", "06:00", "?"),
-			new Member("Shabou", "-08:00", "?"),
-			new Member("Shining", "01:00", "?"),
-			new Member("Suzuya", "00:00", "?"),
-			new Member("Torch", "05:45", "?"),
-			new Member("Valkyrie", "05:00", "?"),
-			new Member("Vasya", "03:00", "?"),
-			new Member("Vision", "-10:00", "?"),
-			new Member("XQ", "-01:00", "?"),
-			new Member("Zidzen", "01:00", "?")
+			new Member("Abz", "01:00"),
+			new Member("Anunah", "06:00"),
+			new Member("Banda", "09:00"),
+			new Member("BaRaBashka", "03:00"),
+			new Member("Basta", "05:00"),
+			new Member("Bevier", "02:00"),
+			new Member("Blaster", "01:00"),
+			new Member("Bossanta", "05:00"),
+			new Member("CnApTaK", "13:00"),
+			new Member("Crom", "-03:00"),
+			new Member("Dim", "07:00"),
+			new Member("Dingo", "09:30"),
+			new Member("Escaria", "-01:00"),
+			new Member("Fantik", "04:00"),
+			new Member("Flick", "10:00"),
+			new Member("Holo", "00:00"),
+			new Member("Hunter", "05:00"),
+			new Member("Khilda", "13:00"),
+			new Member("Kopcap", "05:30"),
+			new Member("KviSt", "10:00"),
+			new Member("Lacro", "02:00"),
+			new Member("Lana", "03:00"),
+			new Member("Largent", "-08:00"),
+			new Member("Lily", "09:30"),
+			new Member("Lilyhuang", "09:30"),
+			new Member("Lime", "05:30"),
+			new Member("Lucifer", "02:00"),
+			new Member("Maxim", "06:00"),
+			new Member("Mr. Hyde", "12:00"),
+			new Member("Msquad", "01:00"),
+			new Member("Nishan", "04:00"),
+			new Member("Piggies", "06:00"),
+			new Member("Raven", "06:00"),
+			new Member("Shabou", "-08:00"),
+			new Member("Shining", "01:00"),
+			new Member("Suzuya", "00:00"),
+			new Member("Torch", "05:45"),
+			new Member("Valkyrie", "05:00"),
+			new Member("Vasya", "03:00"),
+			new Member("Vision", "-10:00"),
+			new Member("XQ", "-01:00"),
+			new Member("Zidzen", "01:00")
 		]),
 		new Guild("Inhuman 2", "[127]", [
-			new Member("aTn", "02:00", "?"),
-			new Member("Eltrololo", "03:00", "?"),
-			new Member("Invalid1337", "01:00", "?"),
-			new Member("Jura", "02:00", "?"),
-			new Member("Partizan", "05:00", "?"),
-			new Member("Rubyheart", "10:00", "?"),
-			new Member("Tinker", "03:00", "?"),
-			new Member("Wally", "02:00", "?")
+			new Member("aTn", "02:00"),
+			new Member("Eltrololo", "03:00"),
+			new Member("Invalid1337", "01:00"),
+			new Member("Jura", "02:00"),
+			new Member("Partizan", "05:00"),
+			new Member("Rubyheart", "10:00"),
+			new Member("Tinker", "03:00"),
+			new Member("Wally", "02:00")
 		]),
 		new Guild("300", "[300]", [
-			new Member("Andy one", "11:00", "?"),
-			new Member("Antz Star", "-10:00", "?"),
-			new Member("Coccaribe", "00:00", "?"),
-			new Member("Cpot", "-08:00", "?"),
-			new Member("dbeen", "02:00", "?"),
-			new Member("Ephialtes", "-01:00", "?"),
-			new Member("Faruk", "01:00", "?"),
-			new Member("Furax", "-02:00", "?"),
-			new Member("Guki", "04:00", "?"),
-			new Member("Heme", "02:00", "?"),
-			new Member("Henry", "07:00", "?"),
-			new Member("Hirshi", "02:00", "?"),
-			new Member("Judas C", "-04:00", "?"),
-			new Member("KaylaJ", "08:00", "?"),
-			new Member("Khorne", "01:00", "?"),
-			new Member("Korupt", "-03:00", "?"),
-			new Member("Kucks", "-05:00", "?"),
-			new Member("Leofigo", "01:00", "?"),
-			new Member("Leon", "06:30", "?"),
-			new Member("Leon 2", "-01:00", "?"),
-			new Member("Luna", "06:00", "?"),
-			new Member("Madara", "02:00", "?"),
-			new Member("Marc", "01:00", "?"),
-			new Member("Mautie", "01:00", "?"),
-			new Member("Mysto", "-05:00", "?"),
-			new Member("NemesisX", "01:00", "?"),
-			new Member("Nikani", "03:00", "?"),
-			new Member("No 1", "-01:00", "?"),
-			new Member("Nord", "03:00", "?"),
-			new Member("Pinup", "-06:00", "?"),
-			new Member("Pipo", "06:30", "?"),
-			new Member("Pippett", "01:00", "?"),
-			new Member("Pong", "-08:00", "?"),
-			new Member("Popeye", "01:00", "?"),
-			new Member("Rage", "01:00", "?"),
-			new Member("Raven", "01:00", "?"),
-			new Member("ti", "01:00", "?"),
-			new Member("Tic-Tac", "05:30", "?"),
-			new Member("T!no", "-02:00", "?"),
-			new Member("Ultra", "09:00", "?"),
-			new Member("Underdog", "-01:00", "?"),
-			new Member("Unkzilla", "-09:00", "?"),
-			new Member("Znorky", "01:00", "?")
+			new Member("Andy one", "11:00"),
+			new Member("Antz Star", "-10:00"),
+			new Member("Coccaribe", "00:00"),
+			new Member("Cpot", "-08:00"),
+			new Member("dbeen", "02:00"),
+			new Member("Ephialtes", "-01:00"),
+			new Member("Faruk", "01:00"),
+			new Member("Furax", "-02:00"),
+			new Member("Guki", "04:00"),
+			new Member("Heme", "02:00"),
+			new Member("Henry", "07:00"),
+			new Member("Hirshi", "02:00"),
+			new Member("Judas C", "-04:00"),
+			new Member("KaylaJ", "08:00"),
+			new Member("Khorne", "01:00"),
+			new Member("Korupt", "-03:00"),
+			new Member("Kucks", "-05:00"),
+			new Member("Leofigo", "01:00"),
+			new Member("Leon", "06:30"),
+			new Member("Leon 2", "-01:00"),
+			new Member("Luna", "06:00"),
+			new Member("Madara", "02:00"),
+			new Member("Marc", "01:00"),
+			new Member("Mautie", "01:00"),
+			new Member("Mysto", "-05:00"),
+			new Member("NemesisX", "01:00"),
+			new Member("Nikani", "03:00"),
+			new Member("No 1", "-01:00"),
+			new Member("Nord", "03:00"),
+			new Member("Pinup", "-06:00"),
+			new Member("Pipo", "06:30"),
+			new Member("Pippett", "01:00"),
+			new Member("Pong", "-08:00"),
+			new Member("Popeye", "01:00"),
+			new Member("Rage", "01:00"),
+			new Member("Raven", "01:00"),
+			new Member("ti", "01:00"),
+			new Member("Tic-Tac", "05:30"),
+			new Member("T!no", "-02:00"),
+			new Member("Ultra", "09:00"),
+			new Member("Underdog", "-01:00"),
+			new Member("Unkzilla", "-09:00"),
+			new Member("Znorky", "01:00")
 		]),
 		new Guild("Evolution", "[Evo]", [
-			new Member("Aleyster", "03:00", "?"),
-			new Member("Amp'd", "-08:00", "?"),
-			new Member("AssKickA", "02:00", "?"),
-			new Member("Auven", "-05:00", "?"),
-			new Member("Avor", "01:00", "?"),
-			new Member("Babe", "01:00", "?"),
-			new Member("BIL", "08:00", "?"),
-			new Member("Bruhu", "-08:00", "?"),
-			new Member("Calipo", "07:00", "?"),
-			new Member("Carlito", "01:00", "?"),
-			new Member("Chain", "-05:00", "?"),
-			new Member("Chrome", "07:00", "?"),
-			new Member("db", "01:00", "?"),
-			new Member("DDevoBabe", "-02:00", "?"),
-			new Member("Fejz", "01:00", "?"),
-			new Member("Furia", "01:00", "?"),
-			new Member("Heisl", "01:00", "?"),
-			new Member("Hotrod", "-03:00", "?"),
-			new Member("Japie", "05:00", "?"),
-			new Member("Keithruby", "08:00", "?"),
-			new Member("Lamilan", "09:00", "?"),
-			new Member("Laxa", "01:00", "?"),
-			new Member("Loof", "-05:00", "?"),
-			new Member("Losser", "01:00", "?"),
-			new Member("MikeHunt", "-08:00", "?"),
-			new Member("Murderer", "03:00", "?"),
-			new Member("Murf", "07:00", "?"),
-			new Member("Mystique", "-05:00", "?"),
-			new Member("Nosferatu", "-08:00", "?"),
-			new Member("Panic", "01:00", "?"),
-			new Member("Pinhead", "02:00", "?"),
-			new Member("Prophylastic", "-08:00", "?"),
-			new Member("Pug Nutz", "-06:00", "?"),
-			new Member("qiuH", "01:00", "?"),
-			new Member("Razer", "-07:00", "?"),
-			new Member("Rogue", "-06:00", "?"),
-			new Member("Rough Souls", "01:00", "?"),
-			new Member("Rox", "10:00", "?"),
-			new Member("Slusk", "01:00", "?"),
-			new Member("Strohhut", "01:00", "?"),
-			new Member("Teez", "-04:00", "?"),
-			new Member("TheRing", "-04:00", "?"),
-			new Member("T|M", "01:00", "?"),
-			new Member("Tyrolis", "01:00", "?"),
-			new Member("Weezel", "01:00", "?")
+			new Member("Aleyster", "03:00"),
+			new Member("Amp'd", "-08:00"),
+			new Member("AssKickA", "02:00"),
+			new Member("Auven", "-05:00"),
+			new Member("Avor", "01:00"),
+			new Member("Babe", "01:00"),
+			new Member("BIL", "08:00"),
+			new Member("Bruhu", "-08:00"),
+			new Member("Calipo", "07:00"),
+			new Member("Carlito", "01:00"),
+			new Member("Chain", "-05:00"),
+			new Member("Chrome", "07:00"),
+			new Member("db", "01:00"),
+			new Member("DDevoBabe", "-02:00"),
+			new Member("Fejz", "01:00"),
+			new Member("Furia", "01:00"),
+			new Member("Heisl", "01:00"),
+			new Member("Hotrod", "-03:00"),
+			new Member("Japie", "05:00"),
+			new Member("Keithruby", "08:00"),
+			new Member("Lamilan", "09:00"),
+			new Member("Laxa", "01:00"),
+			new Member("Loof", "-05:00"),
+			new Member("Losser", "01:00"),
+			new Member("MikeHunt", "-08:00"),
+			new Member("Murderer", "03:00"),
+			new Member("Murf", "07:00"),
+			new Member("Mystique", "-05:00"),
+			new Member("Nosferatu", "-08:00"),
+			new Member("Panic", "01:00"),
+			new Member("Pinhead", "02:00"),
+			new Member("Prophylastic", "-08:00"),
+			new Member("Pug Nutz", "-06:00"),
+			new Member("qiuH", "01:00"),
+			new Member("Razer", "-07:00"),
+			new Member("Rogue", "-06:00"),
+			new Member("Rough Souls", "01:00"),
+			new Member("Rox", "10:00"),
+			new Member("Slusk", "01:00"),
+			new Member("Strohhut", "01:00"),
+			new Member("Teez", "-04:00"),
+			new Member("TheRing", "-04:00"),
+			new Member("T|M", "01:00"),
+			new Member("Tyrolis", "01:00"),
+			new Member("Weezel", "01:00")
 		]),
 		new Guild("United", "[U]", [
-			new Member("Akuma.k", "02:00", "?"),
-			new Member("Anagrys", "09:00", "?"),
-			new Member("Angerphyte", "02:00", "?"),
-			new Member("Axl", "01:00", "?"),
-			new Member("Axtli", "02:00", "?"),
-			new Member("BlackGod", "01:00", "?"),
-			new Member("Botto", "00:00", "?"),
-			new Member("Diablo", "13:00", "?"),
-			new Member("Dipre team", "01:00", "?"),
-			new Member("Donahoe", "-07:00", "?"),
-			new Member("donnyj1993", "-05:00", "?"),
-			new Member("Eyen", "02:00", "?"),
-			new Member("Fabian", "-06:00", "?"),
-			new Member("Fana", "02:00", "?"),
-			new Member("Filtz", "02:00", "?"),
-			new Member("Gallagher", "-06:00", "?"),
-			new Member("Geralt", "06:00", "?"),
-			new Member("gesunegro", "01:00", "?"),
-			new Member("Hades", "-06:00", "?"),
-			new Member("Hehtosai", "-05:00", "?"),
-			new Member("Joel", "02:00", "?"),
-			new Member("Jokstar", "10:00", "?"),
-			new Member("Jynx", "-06:00", "?"),
-			new Member("Kalash", "02:00", "?"),
-			new Member("Kirito", "11:00", "?"),
-			new Member("Krakmart", "02:00", "?"),
-			new Member("Lance", "07:00", "?"),
-			new Member("Leezer", "01:00", "?"),
-			new Member("Naoned", "02:00", "?"),
-			new Member("Pandrone", "01:00", "?"),
-			new Member("Panther", "13:00", "?"),
-			new Member("Personne", "02:00", "?"),
-			new Member("RexMortex", "04:00", "?"),
-			new Member("Ruben", "01:00", "?"),
-			new Member("Salvator", "06:30", "?"),
-			new Member("SemperFi", "01:00", "?"),
-			new Member("Smithe", "-05:00", "?"),
-			new Member("Stolf", "03:00", "?"),
-			new Member("TaMiWai", "03:30", "?"),
-			new Member("Tartines", "00:00", "?"),
-			new Member("Wiz", "03:00", "?"),
-			new Member("Zachek", "06:00", "?")
+			new Member("Akuma.k", "02:00"),
+			new Member("Anagrys", "09:00"),
+			new Member("Angerphyte", "02:00"),
+			new Member("Axl", "01:00"),
+			new Member("Axtli", "02:00"),
+			new Member("BlackGod", "01:00"),
+			new Member("Botto", "00:00"),
+			new Member("Diablo", "13:00"),
+			new Member("Dipre team", "01:00"),
+			new Member("Donahoe", "-07:00"),
+			new Member("donnyj1993", "-05:00"),
+			new Member("Eyen", "02:00"),
+			new Member("Fabian", "-06:00"),
+			new Member("Fana", "02:00"),
+			new Member("Filtz", "02:00"),
+			new Member("Gallagher", "-06:00"),
+			new Member("Geralt", "06:00"),
+			new Member("gesunegro", "01:00"),
+			new Member("Hades", "-06:00"),
+			new Member("Hehtosai", "-05:00"),
+			new Member("Joel", "02:00"),
+			new Member("Jokstar", "10:00"),
+			new Member("Jynx", "-06:00"),
+			new Member("Kalash", "02:00"),
+			new Member("Kirito", "11:00"),
+			new Member("Krakmart", "02:00"),
+			new Member("Lance", "07:00"),
+			new Member("Leezer", "01:00"),
+			new Member("Naoned", "02:00"),
+			new Member("Pandrone", "01:00"),
+			new Member("Panther", "13:00"),
+			new Member("Personne", "02:00"),
+			new Member("RexMortex", "04:00"),
+			new Member("Ruben", "01:00"),
+			new Member("Salvator", "06:30"),
+			new Member("SemperFi", "01:00"),
+			new Member("Smithe", "-05:00"),
+			new Member("Stolf", "03:00"),
+			new Member("TaMiWai", "03:30"),
+			new Member("Tartines", "00:00"),
+			new Member("Wiz", "03:00"),
+			new Member("Zachek", "06:00")
 		]),
 		new Guild("Illuminati", "[Ill]", [
-			new Member("Ajoi", "06:00", "?"),
-			new Member("Arconius", "08:00", "?"),
-			new Member("Ballsdeep", "-04:00", "?"),
-			new Member("Bambam", "02:00", "?"),
-			new Member(":BEAST:", "-02:00", "?"),
-			new Member("Belerz", "02:00", "?"),
-			new Member("Daytona", "01:00", "?"),
-			new Member("Earlender", "02:00", "?"),
-			new Member("Giantbanes", "-06:00", "?"),
-			new Member("Gurlug", "01:00", "?"),
-			new Member("iube.rom", "02:00", "?"),
-			new Member("Jariya", "11:00", "?"),
-			new Member("Jeysun", "-05:00", "?"),
-			new Member("Jurgen", "01:00", "?"),
-			new Member("Kacenty", "01:00", "?"),
-			new Member("kuDDe", "02:00", "?"),
-			new Member("Lady Jam", "-05:00", "?"),
-			new Member("Maev", "02:00", "?"),
-			new Member("mamcoi", "07:00", "?"),
-			new Member("MarcG", "04:00", "?"),
-			new Member("Mauiraimana", "-10:00", "?"),
-			new Member("Maulers", "08:00", "?"),
-			new Member("Mormel", "02:00", "?"),
-			new Member("Moroloco", "02:00", "?"),
-			new Member("Motos", "02:00", "?"),
-			new Member("Mystique", "-04:00", "?"),
-			new Member("Neurodude", "-05:00", "?"),
-			new Member("Nicko", "-01:00", "?"),
-			new Member("Odinsan", "00:00", "?"),
-			new Member("Play", "01:00", "?"),
-			new Member("Pro-noob", "10:00", "?"),
-			new Member("Razorbak", "-06:00", "?"),
-			new Member("Renegade", "10:00", "?"),
-			new Member("Sage M", "04:00", "?"),
-			new Member("Sargeras", "05:00", "?"),
-			new Member("Sean", "12:00", "?"),
-			new Member("Seylinya", "11:00", "?"),
-			new Member("Shrimpy", "02:00", "?"),
-			new Member("Sombra", "01:00", "?"),
-			new Member("Sp9", "03:00", "?"),
-			new Member("Thom", "01:00", "?"),
-			new Member("Torpi", "01:00", "?"),
-			new Member("Vipera", "01:00", "?"),
-			new Member("Virus", "01:00", "?"),
-			new Member("Von", "01:00", "?"),
-			new Member("Xenadin", "08:00", "?"),
-			new Member("Xenathal", "-08:00", "?"),
-			new Member("Zeent", "01:00", "?"),
+			new Member("Ajoi", "06:00"),
+			new Member("Arconius", "08:00"),
+			new Member("Ballsdeep", "-04:00"),
+			new Member("Bambam", "02:00"),
+			new Member(":BEAST:", "-02:00"),
+			new Member("Belerz", "02:00"),
+			new Member("Daytona", "01:00"),
+			new Member("Earlender", "02:00"),
+			new Member("Giantbanes", "-06:00"),
+			new Member("Gurlug", "01:00"),
+			new Member("iube.rom", "02:00"),
+			new Member("Jariya", "11:00"),
+			new Member("Jeysun", "-05:00"),
+			new Member("Jurgen", "01:00"),
+			new Member("Kacenty", "01:00"),
+			new Member("kuDDe", "02:00"),
+			new Member("Lady Jam", "-05:00"),
+			new Member("Maev", "02:00"),
+			new Member("mamcoi", "07:00"),
+			new Member("MarcG", "04:00"),
+			new Member("Mauiraimana", "-10:00"),
+			new Member("Maulers", "08:00"),
+			new Member("Mormel", "02:00"),
+			new Member("Moroloco", "02:00"),
+			new Member("Motos", "02:00"),
+			new Member("Mystique", "-04:00"),
+			new Member("Neurodude", "-05:00"),
+			new Member("Nicko", "-01:00"),
+			new Member("Odinsan", "00:00"),
+			new Member("Play", "01:00"),
+			new Member("Pro-noob", "10:00"),
+			new Member("Razorbak", "-06:00"),
+			new Member("Renegade", "10:00"),
+			new Member("Sage M", "04:00"),
+			new Member("Sargeras", "05:00"),
+			new Member("Sean", "12:00"),
+			new Member("Seylinya", "11:00"),
+			new Member("Shrimpy", "02:00"),
+			new Member("Sombra", "01:00"),
+			new Member("Sp9", "03:00"),
+			new Member("Thom", "01:00"),
+			new Member("Torpi", "01:00"),
+			new Member("Vipera", "01:00"),
+			new Member("Virus", "01:00"),
+			new Member("Von", "01:00"),
+			new Member("Xenadin", "08:00"),
+			new Member("Xenathal", "-08:00"),
+			new Member("Zeent", "01:00"),
 		]),
 		new Guild("Poccnr", "[Rus]", [
-			new Member("Nikitos", "05:30", "?"),
-			new Member("Uziah", "02:00", "?")
+			new Member("Nikitos", "05:30"),
+			new Member("Uziah", "02:00")
 		]),
 		new Guild("Frenchy", "[F]", [
-			new Member("Maraa", "05:45", "?")
+			new Member("Maraa", "05:45")
 		])
 	]
 	
@@ -281,12 +280,6 @@ $(document).ready(function() {
 		var timeZone = document.createTextNode(member.timeZone);
 		tableColumnTimeZone.appendChild(timeZone);
 		tableRow.appendChild(tableColumnTimeZone);
-		
-		// Primary Arena
-		var tableColumnPrimaryArena = document.createElement("TD");
-		var primaryArena = document.createTextNode(member.primaryArena);
-		tableColumnPrimaryArena.appendChild(primaryArena);
-		tableRow.appendChild(tableColumnPrimaryArena);
 		
 		// Guild Tag
 		var tableColumnTag = document.createElement("TD");
@@ -365,7 +358,7 @@ $(document).ready(function() {
 				var secondCount = secondsTillReward - ((hourCount * 60 * 60) + (minuteCount * 60));
 				
 				// Display the time before rewards
-				currentMember.item(4).innerHTML = hourCount + ":" + checkTime(minuteCount) + ":" + checkTime(secondCount);				
+				currentMember.item(3).innerHTML = hourCount + ":" + checkTime(minuteCount) + ":" + checkTime(secondCount);				
 			}
 		}
 		
@@ -375,7 +368,7 @@ $(document).ready(function() {
 			{
 				var thisCell = memberList.rows.item(i).cells;
 
-				var thisResult = thisCell.item(4).innerHTML.split(":");
+				var thisResult = thisCell.item(3).innerHTML.split(":");
 
 				if (parseInt(thisResult[0]) == 0 || (parseInt(thisResult[0]) == 23 && parseInt(thisResult[1]) > 57))
 				{
@@ -413,8 +406,8 @@ $(document).ready(function() {
 					var firstCell = memberList.rows.item(i).cells;
 					var secondCell = memberList.rows.item(i + 1).cells;
 					
-					var firstValues = firstCell.item(4).innerHTML.split(":");
-					var secondValues = secondCell.item(4).innerHTML.split(":");
+					var firstValues = firstCell.item(3).innerHTML.split(":");
+					var secondValues = secondCell.item(3).innerHTML.split(":");
                     
 					var firstHour = parseInt(firstValues[0]);
 					var secondHour = parseInt(secondValues[0]);
@@ -432,22 +425,19 @@ $(document).ready(function() {
 					if (firstHour > secondHour || (parseInt(firstValues[0]) == parseInt(secondValues[0]) && parseInt(firstValues[1]) > parseInt(secondValues[1])))
 					{
 						var tempTime = firstCell.item(0).innerHTML;
-						var tempArena = firstCell.item(1).innerHTML;
-						var tempGuild = firstCell.item(2).innerHTML;
-						var tempName = firstCell.item(3).innerHTML;
-						var tempOffset = firstCell.item(4).innerHTML;
+						var tempGuild = firstCell.item(1).innerHTML;
+						var tempName = firstCell.item(2).innerHTML;
+						var tempOffset = firstCell.item(3).innerHTML;
 						
 						firstCell.item(0).innerHTML = secondCell.item(0).innerHTML;
 						firstCell.item(1).innerHTML = secondCell.item(1).innerHTML;
 						firstCell.item(2).innerHTML = secondCell.item(2).innerHTML;
 						firstCell.item(3).innerHTML = secondCell.item(3).innerHTML;
-						firstCell.item(4).innerHTML = secondCell.item(4).innerHTML;
 
 						secondCell.item(0).innerHTML = tempTime;
-						secondCell.item(1).innerHTML = tempArena;
-						secondCell.item(2).innerHTML = tempGuild;
-						secondCell.item(3).innerHTML = tempName;
-						secondCell.item(4).innerHTML = tempOffset;
+						secondCell.item(1).innerHTML = tempGuild;
+						secondCell.item(2).innerHTML = tempName;
+						secondCell.item(3).innerHTML = tempOffset;
 						
 						done = false;
 					}
@@ -476,7 +466,6 @@ function applyColor(cell, color) {
 	cell.item(1).style.color = color;
 	cell.item(2).style.color = color;
 	cell.item(3).style.color = color;
-	cell.item(4).style.color = color;
 }
 
 update();
