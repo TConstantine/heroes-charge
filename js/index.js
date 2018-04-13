@@ -44,6 +44,7 @@ $(document).ready(function() {
 			new Member("Mr. Hyde", "12:00"),
 			new Member("Msquad", "01:00"),
 			new Member("Nishan", "04:00"),
+			new Member("OUCH!", "-04:00"),
 			new Member("Piggies", "06:00"),
 			new Member("Raven", "06:00"),
 			new Member("Rubyheart", "10:00"),
