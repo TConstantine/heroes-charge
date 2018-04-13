@@ -190,7 +190,7 @@ $(document).ready(function() {
 			new Member("Lance", "07:00"),
 			new Member("Leezer", "01:00"),
 			new Member("Naoned", "02:00"),
-			new Member("Pandrone", "01:00"),
+			new Member("Padrone", "01:00"),
 			new Member("Panther", "13:00"),
 			new Member("Personne", "02:00"),
 			new Member("RexMortex", "04:00"),
