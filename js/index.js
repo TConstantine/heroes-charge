@@ -103,6 +103,7 @@ $(document).ready(function() {
 			new Member("Popeye", "01:00"),
 			new Member("Rage", "01:00"),
 			new Member("Raven", "01:00"),
+			new Member("ScrewbaLL", "10:00"),
 			new Member("ti", "01:00"),
 			new Member("Tic-Tac", "05:30"),
 			new Member("T!no", "-02:00"),
