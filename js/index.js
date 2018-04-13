@@ -46,6 +46,7 @@ $(document).ready(function() {
 			new Member("Nishan", "04:00"),
 			new Member("Piggies", "06:00"),
 			new Member("Raven", "06:00"),
+			new Member("Rubyheart", "10:00"),
 			new Member("Shabou", "-08:00"),
 			new Member("Shining", "01:00"),
 			new Member("Suzuya", "00:00"),
@@ -62,7 +63,6 @@ $(document).ready(function() {
 			new Member("Invalid1337", "01:00"),
 			new Member("Jura", "02:00"),
 			new Member("Partizan", "05:00"),
-			new Member("Rubyheart", "10:00"),
 			new Member("Tinker", "03:00"),
 			new Member("Wally", "02:00")
 		]),
@@ -216,6 +216,7 @@ $(document).ready(function() {
 			new Member("iube.rom", "02:00"),
 			new Member("Jariya", "11:00"),
 			new Member("Jeysun", "-05:00"),
+			new Member("Jules Maigret", "10:00"),
 			new Member("Jurgen", "01:00"),
 			new Member("Kacenty", "01:00"),
 			new Member("kuDDe", "02:00"),
