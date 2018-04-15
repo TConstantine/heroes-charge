@@ -52,6 +52,7 @@ $(document).ready(function() {
 			new Member("Shining", "01:00"),
 			new Member("Suzuya", "00:00"),
 			new Member("Torch", "05:45"),
+			new Member("u4me", "03:00"),
 			new Member("Valkyrie", "05:00"),
 			new Member("Vasya", "03:00"),
 			new Member("Vision", "-10:00"),
