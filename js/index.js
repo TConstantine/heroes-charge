@@ -110,7 +110,7 @@ $(document).ready(function() {
 			new Member("T!no", "-02:00"),
 			new Member("Ultra", "09:00"),
 			new Member("Underdog", "-01:00"),
-			new Member("Unkzilla", "-09:00"),
+			new Member("Unkzilla", "-08:00"),
 			new Member("Znorky", "01:00")
 		]),
 		new Guild("Evolution", "[Evo]", [
