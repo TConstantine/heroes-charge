@@ -97,7 +97,7 @@ $(document).ready(function() {
 			new Member("Nikani", "03:00"),
 			new Member("No 1", "-01:00"),
 			new Member("Nord", "03:00"),
-			new Member("Pinup", "-06:00"),
+			new Member("Pinup", "-07:00"),
 			new Member("Pipo", "06:30"),
 			new Member("Pippett", "01:00"),
 			new Member("Pong", "-08:00"),
