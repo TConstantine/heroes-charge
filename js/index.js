@@ -90,7 +90,7 @@ $(document).ready(function() {
 			new Member("Leon", "06:30"),
 			new Member("Leon 2", "-01:00"),
 			new Member("Luna", "06:00"),
-			new Member("Madara", "02:00"),
+			new Member("Madara", "03:00"),
 			new Member("Marc", "01:00"),
 			new Member("Mautie", "01:00"),
 			new Member("Mysto", "-05:00"),
