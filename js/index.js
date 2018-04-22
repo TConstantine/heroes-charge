@@ -14,6 +14,7 @@ $(document).ready(function() {
 	var guilds = [
 		new Guild("Inhuman", "[127]", [
 			new Member("Abz", "01:00"),
+			new Member("Antz Star", "-08:00"),
 			new Member("Anunah", "06:00"),
 			new Member("Banda", "09:00"),
 			new Member("BaRaBashka", "03:00"),
@@ -35,7 +36,7 @@ $(document).ready(function() {
 			new Member("KviSt", "10:00"),
 			new Member("Lacro", "02:00"),
 			new Member("Lana", "03:00"),
-			new Member("Largent", "-08:00"),
+			new Member("Largent", "-07:00"),
 			new Member("Lily", "09:30"),
 			new Member("Lilyhuang", "09:30"),
 			new Member("Lime", "05:30"),
@@ -70,7 +71,6 @@ $(document).ready(function() {
 		]),
 		new Guild("300", "[300]", [
 			new Member("Andy one", "11:00"),
-			new Member("Antz Star", "-10:00"),
 			new Member("Coccaribe", "00:00"),
 			new Member("Cpot", "-08:00"),
 			new Member("dbeen", "02:00"),
