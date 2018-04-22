@@ -49,6 +49,7 @@ $(document).ready(function() {
 			new Member("Piggies", "06:00"),
 			new Member("Raven", "06:00"),
 			new Member("Rubyheart", "10:00"),
+			new Member("Saki", "05:00"),
 			new Member("Shabou", "-08:00"),
 			new Member("Shining", "01:00"),
 			new Member("Suzuya", "00:00"),
@@ -66,8 +67,7 @@ $(document).ready(function() {
 			new Member("Invalid1337", "01:00"),
 			new Member("Jura", "02:00"),
 			new Member("Partizan", "05:00"),
-			new Member("Tinker", "03:00"),
-			new Member("Wally", "02:00")
+			new Member("Tinker", "03:00")
 		]),
 		new Guild("300", "[300]", [
 			new Member("Andy one", "11:00"),
