@@ -73,6 +73,7 @@ $(document).ready(function() {
 			new Member("Andy one", "11:00"),
 			new Member("Coccaribe", "00:00"),
 			new Member("Cpot", "-08:00"),
+			new Member("Cronos", "02:00"),
 			new Member("dbeen", "02:00"),
 			new Member("Ephialtes", "-01:00"),
 			new Member("Faruk", "01:00"),
