@@ -182,7 +182,7 @@ $(document).ready(function() {
 			new Member("Geralt", "06:00"),
 			new Member("gesunegro", "01:00"),
 			new Member("Hades", "-06:00"),
-			new Member("Hehtosai", "-05:00"),
+			new Member("Hehtosai", "-04:00"),
 			new Member("Joel", "02:00"),
 			new Member("Jokstar", "10:00"),
 			new Member("Jynx", "-06:00"),
