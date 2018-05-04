@@ -16,6 +16,7 @@ $(document).ready(function() {
 			new Member("Abz", "01:00"),
 			new Member("Antz Star", "-08:00"),
 			new Member("Anunah", "06:00"),
+			new Member("Axl", "01:00"),
 			new Member("Banda", "09:00"),
 			new Member("BaRaBashka", "03:00"),
 			new Member("Basta", "05:00"),
@@ -32,6 +33,7 @@ $(document).ready(function() {
 			new Member("Hunter", "05:00"),
 			new Member("j0cw", "09:00"),
 			new Member("Judas C", "-04:00"),
+			new Member("KaylaJ", "08:00"),
 			new Member("Khilda", "13:00"),
 			new Member("Kopcap", "05:30"),
 			new Member("KviSt", "10:00"),
@@ -79,14 +81,12 @@ $(document).ready(function() {
 			new Member("Cpot", "-08:00"),
 			new Member("Cronos", "02:00"),
 			new Member("dbeen", "02:00"),
-			new Member("Ephialtes", "-01:00"),
 			new Member("Faruk", "01:00"),
 			new Member("Furax", "-02:00"),
 			new Member("Guki", "04:00"),
 			new Member("Heme", "02:00"),
 			new Member("Henry", "07:00"),
 			new Member("Hirshi", "02:00"),
-			new Member("KaylaJ", "08:00"),
 			new Member("Khorne", "01:00"),
 			new Member("Korupt", "-03:00"),
 			new Member("Kucks", "-05:00"),
@@ -102,7 +102,6 @@ $(document).ready(function() {
 			new Member("Pinup", "-07:00"),
 			new Member("Pipo", "06:30"),
 			new Member("Pippett", "01:00"),
-			new Member("Pong", "-08:00"),
 			new Member("Popeye", "01:00"),
 			new Member("Rage", "01:00"),
 			new Member("Raven", "01:00"),
@@ -111,7 +110,6 @@ $(document).ready(function() {
 			new Member("Tic-Tac", "05:30"),
 			new Member("T!no", "-02:00"),
 			new Member("Underdog", "-01:00"),
-			new Member("Unkzilla", "-08:00"),
 			new Member("Znorky", "01:00")
 		]),
 		new Guild("Evolution", "[Evo]", [
@@ -165,7 +163,6 @@ $(document).ready(function() {
 			new Member("Akuma.k", "02:00"),
 			new Member("Anagrys", "09:00"),
 			new Member("Angerphyte", "02:00"),
-			new Member("Axl", "01:00"),
 			new Member("Axtli", "02:00"),
 			new Member("BlackGod", "01:00"),
 			new Member("Botto", "00:00"),
@@ -259,9 +256,6 @@ $(document).ready(function() {
 		new Guild("Poccnr", "[Rus]", [
 			new Member("Nikitos", "05:30"),
 			new Member("Uziah", "02:00")
-		]),
-		new Guild("Frenchy", "[F]", [
-			new Member("Maraa", "05:45")
 		])
 	]
 	
