@@ -64,6 +64,7 @@ $(document).ready(function() {
 			new Member("Shining", "01:00"),
 			new Member("Suzuya", "00:00"),
 			new Member("ti", "01:00"),
+			new Member("Tic-Tac", "05:30"),
 			new Member("Torch", "05:45"),
 			new Member("totojana", "02:00"),
 			new Member("u4me", "03:00"),
@@ -103,7 +104,6 @@ $(document).ready(function() {
 			new Member("Popeye", "01:00"),
 			new Member("Rage", "01:00"),
 			new Member("ScrewbaLL", "10:00"),
-			new Member("Tic-Tac", "05:30"),
 			new Member("T!no", "-02:00"),
 			new Member("Underdog", "-01:00"),
 			new Member("Znorky", "01:00")
