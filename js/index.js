@@ -80,7 +80,6 @@ $(document).ready(function() {
 			new Member("aTn", "02:00"),
 			new Member("Eltrololo", "03:00"),
 			new Member("Invalid1337", "01:00"),
-			new Member("Jura", "02:00"),
 			new Member("Partizan", "05:00"),
 			new Member("Tinker", "03:00")
 		]),
@@ -89,7 +88,6 @@ $(document).ready(function() {
 			new Member("Coccaribe", "00:00"),
 			new Member("Cronos", "02:00"),
 			new Member("dbeen", "02:00"),
-			new Member("Furax", "-02:00"),
 			new Member("Guki", "04:00"),
 			new Member("Heme", "02:00"),
 			new Member("Henry", "07:00"),
@@ -250,6 +248,7 @@ $(document).ready(function() {
 			new Member("Zeent", "01:00"),
 		]),
 		new Guild("Poccnr", "[Rus]", [
+			new Member("Jura", "02:00"),
 			new Member("Nikitos", "05:30"),
 			new Member("Uziah", "02:00")
 		])
