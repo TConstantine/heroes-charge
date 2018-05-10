@@ -83,19 +83,12 @@ $(document).ready(function() {
 		]),
 		new Guild("300", "[300]", [
 			new Member("dbeen", "02:00"),
-			new Member("Heme", "02:00"),
 			new Member("Korupt", "-03:00"),
-			new Member("Kucks", "-05:00"),
 			new Member("Luna", "06:00"),
 			new Member("Madara", "03:00"),
 			new Member("Mautie", "01:00"),
-			new Member("Mysto", "-05:00"),
-			new Member("NemesisX", "01:00"),
 			new Member("Nord", "03:00"),
 			new Member("Pipo", "06:30"),
-			new Member("Popeye", "01:00"),
-			new Member("Rage", "01:00"),
-			new Member("ScrewbaLL", "10:00"),
 			new Member("Znorky", "01:00")
 		]),
 		new Guild("Evolution", "[Evo]", [
