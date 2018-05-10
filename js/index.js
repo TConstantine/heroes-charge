@@ -54,7 +54,6 @@ $(document).ready(function() {
 			new Member("Marc", "01:00"),
 			new Member("Maxim", "06:00"),
 			new Member("Mr. Hyde", "12:00"),
-			new Member("Msquad", "01:00"),
 			new Member("Nishan", "04:00"),
 			new Member("No 1", "-01:00"),
 			new Member("Piggies", "06:00"),
@@ -68,7 +67,6 @@ $(document).ready(function() {
 			new Member("Tic-Tac", "05:30"),
 			new Member("Torch", "05:45"),
 			new Member("totojana", "02:00"),
-			new Member("u4me", "03:00"),
 			new Member("Ultra", "09:00"),
 			new Member("Valkyrie", "05:00"),
 			new Member("Vasya", "03:00"),
@@ -84,13 +82,8 @@ $(document).ready(function() {
 			new Member("Tinker", "03:00")
 		]),
 		new Guild("300", "[300]", [
-			new Member("Andy one", "11:00"),
-			new Member("Coccaribe", "00:00"),
-			new Member("Cronos", "02:00"),
 			new Member("dbeen", "02:00"),
-			new Member("Guki", "04:00"),
 			new Member("Heme", "02:00"),
-			new Member("Henry", "07:00"),
 			new Member("Korupt", "-03:00"),
 			new Member("Kucks", "-05:00"),
 			new Member("Luna", "06:00"),
@@ -103,8 +96,6 @@ $(document).ready(function() {
 			new Member("Popeye", "01:00"),
 			new Member("Rage", "01:00"),
 			new Member("ScrewbaLL", "10:00"),
-			new Member("T!no", "-02:00"),
-			new Member("Underdog", "-01:00"),
 			new Member("Znorky", "01:00")
 		]),
 		new Guild("Evolution", "[Evo]", [
@@ -223,6 +214,7 @@ $(document).ready(function() {
 			new Member("Mormel", "02:00"),
 			new Member("Moroloco", "02:00"),
 			new Member("Motos", "02:00"),
+			new Member("Msquad", "01:00"),
 			new Member("Mystique", "-04:00"),
 			new Member("Neurodude", "-05:00"),
 			new Member("Nicko", "-01:00"),
