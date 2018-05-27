@@ -50,6 +50,7 @@ $(document).ready(function() {
 			new Member("Lilyhuang", "09:30"),
 			new Member("Lime", "05:30"),
 			new Member("Lucifer", "02:00"),
+			new Member("Madara", "3:00"),
 			new Member("Marc", "01:00"),
 			new Member("Maxim", "06:00"),
 			new Member("Mr. Hyde", "12:00"),
@@ -82,7 +83,6 @@ $(document).ready(function() {
 		]),
 		new Guild("300", "[300]", [
 			new Member("dbeen", "02:00"),
-			new Member("Madara", "03:00"),
 			new Member("Znorky", "01:00")
 		]),
 		new Guild("Evolution", "[Evo]", [
