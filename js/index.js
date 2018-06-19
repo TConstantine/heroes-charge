@@ -182,7 +182,7 @@ $(document).ready(function() {
 			new Member("Belerz", "02:00"),
 			new Member("Bossanta", "05:00"),
 			new Member("Daytona", "01:00"),
-			new Member("Earlender", "02:00"),
+			new Member("Earlender", "03:00"),
 			new Member("Giantbanes", "-06:00"),
 			new Member("Gurlug", "01:00"),
 			new Member("Invalid1337", "01:00"),
