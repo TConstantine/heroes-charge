@@ -29,12 +29,9 @@ $(document).ready(function() {
 			new Member("Dim", "07:00"),
 			new Member("Dingo", "09:30"),
 			new Member("Escaria", "-01:00"),
-			new Member("Fantik", "04:00"),
 			new Member("Faruk", "01:00"),
-			new Member("Flick", "10:00"),
 			new Member("Holo", "00:00"),
 			new Member("Hunter", "05:00"),
-			new Member("j0cw", "09:00"),
 			new Member("Judas C", "-04:00"),
 			new Member("KaylaJ", "08:00"),
 			new Member("KISssKA", "12:00"),
@@ -69,7 +66,6 @@ $(document).ready(function() {
 			new Member("Tic-Tac", "05:30"),
 			new Member("Torch", "05:45"),
 			new Member("totojana", "02:00"),
-			new Member("Ultra", "09:00"),
 			new Member("Valkyrie", "05:00"),
 			new Member("Vasya", "03:00"),
 			new Member("Vision", "-10:00"),
@@ -232,6 +228,7 @@ $(document).ready(function() {
 			new Member("Zeent", "01:00"),
 		]),
 		new Guild("Poccnr", "[Rus]", [
+			new Member("Fantik", "04:00"),
 			new Member("Jura", "02:00"),
 			new Member("Nikitos", "05:30"),
 			new Member("Uziah", "02:00")
